@@ -1,7 +1,5 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  experimental: { appDir: true }
+  // Sin opciones experimentales/deprecadas. Limpio y compatible.
 };
 export default nextConfig;

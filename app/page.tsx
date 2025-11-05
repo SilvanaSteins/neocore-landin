@@ -1,23 +1,24 @@
-
-import Link from 'next/link'
-
 export default function Page() {
   return (
-    <main className="container">
-      <section className="card">
-        <span className="badge">NeoCore · pre-alpha</span>
-        <h1>Estamos afinando el motor</h1>
-        <p>La plataforma está en preparación. Mientras tanto, este dominio está servido por un proyecto mínimo, sano y observable.</p>
-        <div className="actions">
-          <a className="button" href="/api/ping">/api/ping</a>
-          <a className="button" href="/status">/status</a>
-          <Link className="button" href="https://vercel.com">Vercel</Link>
-        </div>
-        <footer>
-          <span>Build limpio · sin CSP agresivo</span>
-          <span className="code">next 14 · node 18+</span>
-        </footer>
-      </section>
+    <main style={{ textAlign: "center", padding: 24 }}>
+      <h1 style={{ fontSize: 36, marginBottom: 8 }}>🚧 NeoCore</h1>
+      <p style={{ opacity: 0.8, marginBottom: 24 }}>
+        Estamos afinando el motor. Vuelve pronto.
+      </p>
+      <a
+        href="/api/ping"
+        style={{
+          display: "inline-block",
+          padding: "10px 16px",
+          background: "white",
+          color: "#111827",
+          borderRadius: 8,
+          textDecoration: "none",
+          fontWeight: 600
+        }}
+      >
+        /api/ping
+      </a>
     </main>
-  )
+  );
 }
